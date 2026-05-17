@@ -160,25 +160,30 @@ export default function Featured() {
     <>
       {/* О туре + Для кого */}
       <div className="bg-white px-6 py-16 md:py-24 max-w-5xl mx-auto">
-        <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-4">О туре</h2>
-        <p className="text-base text-neutral-600 font-light leading-relaxed mb-10">
-          Вас ждут 10 дней вне времени и суеты. Пилатес, приключения, круг единомышленниц и полная свобода быть собой. Программа составлена так, чтобы вы вернулись обновлёнными — влюбленными в себя и этот мир!
-        </p>
-
-        <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-4">Этот тур для тебя, если...</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          {[
-            { emoji: "🌿", text: "Устала от городского ритма и хочешь наконец выдохнуть" },
-            { emoji: "🤍", text: "Едешь одна, но хочешь тепла, компании и новых подруг" },
-            { emoji: "🧘‍♀️", text: "Мечтаешь совместить отдых с движением для тела и души" },
-            { emoji: "🌊", text: "Хочешь увезти с Бали не только загар, но и внутренний покой" },
-            { emoji: "📸", text: "Пора обновить Instagram-ленту — и саму себя" },
-          ].map((item, i) => (
-            <div key={i} className="flex items-start gap-3 bg-neutral-50 px-4 py-3">
-              <span className="text-lg leading-none mt-0.5">{item.emoji}</span>
-              <p className="text-sm text-neutral-700 font-light leading-relaxed">{item.text}</p>
-            </div>
-          ))}
+        <div className="flex flex-col md:flex-row gap-10 md:gap-20">
+          <div className="md:w-1/2">
+            <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-4">О туре</h2>
+            <p className="text-base text-neutral-600 font-light leading-relaxed">
+              Вас ждут 10 дней вне времени и суеты. Пилатес, приключения, круг единомышленниц и полная свобода быть собой. Программа составлена так, чтобы вы вернулись обновлёнными — влюбленными в себя и этот мир!
+            </p>
+          </div>
+          <div className="md:w-1/2">
+            <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-4">Этот тур для тебя, если...</h2>
+            <ul className="flex flex-col gap-2">
+              {[
+                { emoji: "🌿", text: "Устала от городского ритма и хочешь выдохнуть" },
+                { emoji: "🤍", text: "Едешь одна, но хочешь тепла и новых подруг" },
+                { emoji: "🧘‍♀️", text: "Хочешь совместить отдых с движением для тела и души" },
+                { emoji: "🌊", text: "Хочешь увезти с Бали не только загар, но и покой" },
+                { emoji: "📸", text: "Пора обновить Instagram-ленту — и саму себя" },
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-2 text-sm text-neutral-700 font-light">
+                  <span>{item.emoji}</span>
+                  <span>{item.text}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
 
