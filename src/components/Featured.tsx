@@ -160,13 +160,13 @@ export default function Featured() {
     <>
       {/* О туре + Для кого */}
       <div className="bg-white px-6 py-16 md:py-24 max-w-5xl mx-auto">
-        <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-8">О туре</h2>
-        <p className="text-lg text-neutral-600 font-light leading-relaxed mb-16">
+        <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-4">О туре</h2>
+        <p className="text-base text-neutral-600 font-light leading-relaxed mb-10">
           Вас ждут 10 дней вне времени и суеты. Пилатес, приключения, круг единомышленниц и полная свобода быть собой. Программа составлена так, чтобы вы вернулись обновлёнными — влюбленными в себя и этот мир!
         </p>
 
-        <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-8">Этот тур для тебя, если...</h2>
-        <div className="flex flex-col gap-0">
+        <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-4">Этот тур для тебя, если...</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {[
             { emoji: "🌿", text: "Устала от городского ритма и хочешь наконец выдохнуть" },
             { emoji: "🤍", text: "Едешь одна, но хочешь тепла, компании и новых подруг" },
@@ -174,12 +174,11 @@ export default function Featured() {
             { emoji: "🌊", text: "Хочешь увезти с Бали не только загар, но и внутренний покой" },
             { emoji: "📸", text: "Пора обновить Instagram-ленту — и саму себя" },
           ].map((item, i) => (
-            <div key={i} className="border-t border-neutral-200 py-5 flex items-start gap-4">
-              <span className="text-2xl leading-none mt-0.5">{item.emoji}</span>
-              <p className="text-base text-neutral-800 font-light leading-relaxed">{item.text}</p>
+            <div key={i} className="flex items-start gap-3 bg-neutral-50 px-4 py-3">
+              <span className="text-lg leading-none mt-0.5">{item.emoji}</span>
+              <p className="text-sm text-neutral-700 font-light leading-relaxed">{item.text}</p>
             </div>
           ))}
-          <div className="border-t border-neutral-200" />
         </div>
       </div>
 
@@ -223,7 +222,7 @@ export default function Featured() {
             href="#contact"
             className="bg-black text-white border border-black px-6 py-3 text-sm transition-all duration-300 hover:bg-white hover:text-black cursor-pointer inline-block uppercase tracking-widest"
           >
-            Хочу на тур
+            Хочу в тур
           </a>
         </div>
       </div>
