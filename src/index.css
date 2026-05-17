@@ -97,6 +97,6 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Josefin Sans", system-ui, sans-serif;
+    font-family: "Jost", system-ui, sans-serif;
   }
 }
