@@ -14,27 +14,26 @@ export default function Hero() {
       ref={container}
       className="relative flex items-center justify-center h-screen overflow-hidden"
     >
-      <motion.div
-        style={{ y }}
-        className="absolute inset-0 w-full h-full"
-      >
+      <motion.div style={{ y }} className="absolute inset-0 w-full h-full">
         <img
           src="https://cdn.poehali.dev/projects/dbd48d9d-1a2d-4473-87e5-057fc5139c0d/files/e75878f3-fb52-4a99-8c89-4e48de425645.jpg"
           alt="Бали на закате"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/35" />
       </motion.div>
 
-      <div className="relative z-10 text-center text-white px-6">
-        <p className="text-xs sm:text-sm uppercase tracking-[0.4em] mb-6 opacity-80 font-light">
-          22 — 31 июля · Бали
+      <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
+        <p className="text-xs sm:text-sm uppercase tracking-[0.4em] mb-6 opacity-75 font-light">
+          Даты: 22.07–31.07 · Бали
         </p>
         <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-tight mb-6 leading-none">
           SHE BALI
         </h1>
-        <p className="text-lg md:text-xl max-w-xl mx-auto opacity-90 font-light leading-relaxed mb-10">
-          10 дней, чтобы влюбиться в себя.<br />
+        <p className="text-xl md:text-2xl font-light mb-3 opacity-95 leading-relaxed">
+          10 дней, чтобы влюбиться в себя.
+        </p>
+        <p className="text-base md:text-lg font-light opacity-80 mb-10 max-w-xl mx-auto">
           Пилатес, океан и остров, который меняет людей.
         </p>
         <a
