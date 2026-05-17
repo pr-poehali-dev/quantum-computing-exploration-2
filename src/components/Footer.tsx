@@ -10,29 +10,17 @@ export default function Footer() {
           <div className="bg-neutral-900 py-6 sm:py-8 lg:py-10 px-5 sm:px-8 h-full w-full flex flex-col justify-between">
 
             <div className="flex flex-wrap shrink-0 gap-8 sm:gap-12 lg:gap-20">
-              {/* Организатор */}
-              <div className="flex flex-col gap-1 sm:gap-2 max-w-xs">
-                <h3 className="mb-2 uppercase text-neutral-400 text-xs tracking-widest">Организатор</h3>
-                <p className="text-white text-sm sm:text-base font-medium">Абрамович Маргарита @helyfely</p>
-                <p className="text-neutral-400 text-sm leading-relaxed mt-1">
-                  Тренер по пилатесу, растяжке и функциональному тренингу. Ваш друг, наставник и проводник в мир осознанного движения и идеального тела. Глубоко верю, что каждое тело уникально.
-                </p>
-                <p className="text-neutral-400 text-sm leading-relaxed mt-2">
-                  Моя миссия — помочь увидеть в теле скрытый ресурс и раскрыть его потенциал. На своих тренировках не просто учу двигаться, а чувствовать и слышать тело, успокаивать ум и раскрывать свою внутреннюю силу.
-                </p>
-              </div>
-
               {/* Контакты */}
               <div className="flex flex-col gap-1 sm:gap-2">
                 <h3 className="mb-2 uppercase text-neutral-400 text-xs tracking-widest">Забронировать место</h3>
                 <p className="text-neutral-400 text-sm mb-3 leading-relaxed">
-                  Напишите нам — и получите подробную информацию о туре:
+                  Напишите — и получите подробную информацию о туре:
                 </p>
                 <a
                   href="tel:+79677749016"
                   className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  +79677749016
+                  +7 967 774 90 16
                 </a>
                 <a
                   href="https://t.me/helyfely"
@@ -40,7 +28,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  @helyfely — Telegram
+                  Telegram
                 </a>
                 <a
                   href="https://instagram.com/helyfely"
@@ -48,7 +36,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  @helyfely — Instagram
+                  Instagram
                 </a>
                 <a
                   href="https://wa.me/79677749016"
@@ -56,7 +44,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  @helyfely — WhatsApp
+                  WhatsApp
                 </a>
                 <p className="text-neutral-500 text-sm mt-3">До встречи на Бали!</p>
               </div>
