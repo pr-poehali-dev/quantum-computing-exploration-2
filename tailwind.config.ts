@@ -19,7 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Playfair Display', 'Georgia', 'serif'],
+				sans: ['Cormorant Garamond', 'Georgia', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
