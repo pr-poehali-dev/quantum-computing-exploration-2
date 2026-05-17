@@ -66,16 +66,19 @@ export default function Promo() {
           </motion.div>
         </div>
 
-        <h3 className="absolute top-12 left-6 text-white uppercase z-10 text-sm tracking-widest opacity-70">
-          Стоимость
+        <h3 className="absolute top-12 left-6 text-white uppercase z-10 text-sm tracking-widest opacity-60">
+          Стоимость тура
         </h3>
-        <p className="absolute top-12 right-6 text-white uppercase z-10 text-sm tracking-widest opacity-70">
-          Размещение: виллы
-        </p>
 
-        <p className="absolute bottom-12 right-6 text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-3xl z-10 font-light leading-tight">
-          265 000 ₽ — и 10 дней, которые изменят тебя.
-        </p>
+        <div className="relative z-10 text-center text-white">
+          <p className="text-sm uppercase tracking-widest opacity-60 mb-4">Всё включено</p>
+          <p className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-none">
+            265 000 ₽
+          </p>
+          <p className="text-base md:text-lg font-light opacity-80 mt-6">
+            Виллы · Пилатес · Завтраки · Трансферы · Программа
+          </p>
+        </div>
       </div>
 
       {/* Что входит / не входит */}
@@ -101,20 +104,6 @@ export default function Promo() {
               ))}
             </ul>
           </div>
-        </div>
-
-        {/* Рекомендованные рейсы */}
-        <div className="max-w-5xl mx-auto mt-16 md:mt-24">
-          <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-8">Рекомендованные рейсы</h2>
-          <p className="text-lg text-neutral-700 font-light leading-relaxed max-w-2xl">
-            Предлагаю вам удобные прямые авиарейсы с вылетом из Москвы. По-возможности объединим всю группу на один рейс, чтобы вы могли познакомиться и сблизиться уже в пути.
-          </p>
-          <p className="text-lg text-neutral-700 font-light leading-relaxed max-w-2xl mt-4">
-            По прибытии вас встретят в аэропорту, а далее будет организован групповой трансфер до виллы.
-          </p>
-          <p className="text-lg text-neutral-700 font-light leading-relaxed max-w-2xl mt-4">
-            Если вам удобнее другой вариант перелёта, вы можете выбрать любой подходящий рейс — вас также встретят и сопроводят до виллы.
-          </p>
         </div>
 
         {/* FAQ */}

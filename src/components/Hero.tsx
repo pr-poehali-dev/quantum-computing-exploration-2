@@ -24,17 +24,17 @@ export default function Hero() {
       </motion.div>
 
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-        <p className="text-xs sm:text-sm uppercase tracking-[0.4em] mb-6 opacity-75 font-light">
-          Даты: 22.07–31.07 · Бали
-        </p>
         <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-tight mb-6 leading-none">
           SHE BALI
         </h1>
         <p className="text-xl md:text-2xl font-light mb-3 opacity-95 leading-relaxed">
           10 дней, чтобы влюбиться в себя.
         </p>
-        <p className="text-base md:text-lg font-light opacity-80 mb-10 max-w-xl mx-auto">
+        <p className="text-base md:text-lg font-light opacity-80 mb-8 max-w-xl mx-auto">
           Пилатес, океан и остров, который меняет людей.
+        </p>
+        <p className="text-2xl md:text-3xl font-semibold tracking-widest mb-10">
+          22 ИЮЛЯ — 31 ИЮЛЯ
         </p>
         <a
           href="#contact"
