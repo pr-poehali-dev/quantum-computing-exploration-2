@@ -114,25 +114,25 @@ export default function Featured() {
       {/* О туре + Для кого */}
       <div className="bg-white px-6 py-16 md:py-24 max-w-5xl mx-auto">
         <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-8">О туре</h2>
-        <p className="text-2xl md:text-4xl font-light text-neutral-900 leading-snug mb-6">
-          Приглашаю вас на пилатес-девичник на Бали — остров, где природа, традиции и забота о теле соединяются в единый ритм.
-        </p>
         <p className="text-lg text-neutral-600 font-light leading-relaxed mb-16">
           Вас ждут 10 дней вне времени и суеты. Пилатес, приключения, круг единомышленниц и полная свобода быть собой. Программа составлена так, чтобы вы вернулись обновлёнными — влюбленными в себя и этот мир!
         </p>
 
-        <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-8">Для кого этот тур?</h2>
-        <div className="flex flex-col gap-4">
+        <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-8">Этот тур для тебя, если...</h2>
+        <div className="flex flex-col gap-0">
           {[
-            "Для тебя, если ты устала от дел и городской суеты.",
-            "Если хочешь в отпуск, но боишься, что будет скучно одной.",
-            "Если хочешь совместить приятный отпуск с полезным тренировками.",
-            "Если пора обновить Instagram-ленту.",
-          ].map((text, i) => (
-            <div key={i} className="border-t border-neutral-200 pt-4">
-              <p className="text-lg text-neutral-800 font-light">{text}</p>
+            { emoji: "🌿", text: "Устала от городского ритма и хочешь наконец выдохнуть" },
+            { emoji: "🤍", text: "Едешь одна, но хочешь тепла, компании и новых подруг" },
+            { emoji: "🧘‍♀️", text: "Мечтаешь совместить отдых с движением для тела и души" },
+            { emoji: "🌊", text: "Хочешь увезти с Бали не только загар, но и внутренний покой" },
+            { emoji: "📸", text: "Пора обновить Instagram-ленту — и саму себя" },
+          ].map((item, i) => (
+            <div key={i} className="border-t border-neutral-200 py-5 flex items-start gap-4">
+              <span className="text-2xl leading-none mt-0.5">{item.emoji}</span>
+              <p className="text-base text-neutral-800 font-light leading-relaxed">{item.text}</p>
             </div>
           ))}
+          <div className="border-t border-neutral-200" />
         </div>
       </div>
 
