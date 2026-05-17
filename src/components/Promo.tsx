@@ -1,5 +1,6 @@
 import { useScroll, useTransform, motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import Icon from "@/components/ui/icon";
 
 export default function Promo() {
   const container = useRef<HTMLDivElement>(null);
@@ -8,6 +9,8 @@ export default function Promo() {
     offset: ["start end", "end start"],
   });
   const y = useTransform(scrollYProgress, [0, 1], ["-10vh", "10vh"]);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const included = [
     "Две роскошные виллы в самых красивых локациях (Убуд и Кута).",
@@ -106,16 +109,45 @@ export default function Promo() {
           </div>
         </div>
 
+        {/* Рекомендованные рейсы */}
+        <div className="max-w-5xl mx-auto mt-16 md:mt-24">
+          <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-8">Рекомендованные рейсы</h2>
+          <p className="text-lg text-neutral-700 font-light leading-relaxed max-w-2xl">
+            Предлагаю вам удобные прямые авиарейсы с вылетом из Москвы. По-возможности объединим всю группу на один рейс, чтобы вы могли познакомиться и сблизиться уже в пути.
+          </p>
+          <p className="text-lg text-neutral-700 font-light leading-relaxed max-w-2xl mt-4">
+            По прибытии вас встретят в аэропорту, а далее будет организован групповой трансфер до виллы.
+          </p>
+          <p className="text-lg text-neutral-700 font-light leading-relaxed max-w-2xl mt-4">
+            Если вам удобнее другой вариант перелёта, вы можете выбрать любой подходящий рейс — вас также встретят и сопроводят до виллы.
+          </p>
+        </div>
+
         {/* FAQ */}
         <div className="max-w-5xl mx-auto mt-16 md:mt-24">
           <h2 className="uppercase text-xs tracking-widest text-neutral-400 mb-8">Вопросы и ответы</h2>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col">
             {faq.map((item, i) => (
-              <div key={i} className="border-t border-neutral-200 pt-6">
-                <p className="text-base font-medium text-neutral-900 mb-2">{item.q}</p>
-                <p className="text-sm text-neutral-500 leading-relaxed">{item.a}</p>
+              <div key={i} className="border-t border-neutral-200">
+                <button
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                  className="w-full flex justify-between items-center py-5 text-left gap-4 cursor-pointer"
+                >
+                  <p className="text-base font-medium text-neutral-900">{item.q}</p>
+                  <Icon
+                    name={openFaq === i ? "Minus" : "Plus"}
+                    size={18}
+                    className="shrink-0 text-neutral-400"
+                  />
+                </button>
+                {openFaq === i && (
+                  <p className="text-sm text-neutral-500 leading-relaxed pb-5 pr-8">
+                    {item.a}
+                  </p>
+                )}
               </div>
             ))}
+            <div className="border-t border-neutral-200" />
           </div>
         </div>
       </div>
